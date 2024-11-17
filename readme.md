@@ -41,13 +41,22 @@
    ```bash
    npm install
    ```
+4. **替换ffmpeg**
+   第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
 
-4. **开发模式运行**
+   所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
+   
+   [下载-ffmpeg-git-full.7z](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
+   
+   解压后复制 bin/ffmpeg.exe 至 node_modules/@ffmpeg-installer/win32-x64 目录下替换。
+
+
+5. **开发模式运行**
    ```bash
    npm run dev
    ```
 
-5. **构建应用**
+6. **构建应用**
    ```bash
    # 只构建 Windows 版本
    npm run build:win
@@ -79,13 +88,21 @@
    ```bash
    npm install
    ```
+4. **替换ffmpeg**
+   第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
 
-4. **开发模式运行**
+   所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
+
+   [下载-ffmpeg71arm.zip](https://www.osxexperts.net/ffmpeg71arm.zip)
+   
+   解压后复制 ffmpeg 至 node_modules/@ffmpeg-installer/darwin-arm64 目录下替换。
+
+5. **开发模式运行**
    ```bash
    npm run dev
    ```
 
-5. **构建应用**
+6. **构建应用**
    ```bash
    # 只构建 macOS 版本
    npm run build:mac
@@ -122,12 +139,19 @@
    npm install
    ```
 
-4. **开发模式运行**
+4. **替换ffmpeg**
+   第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
+
+   所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
+   
+   解压后复制 ffmpeg 至 node_modules/@ffmpeg-installer/xxxxx 目录下替换。
+
+5. **开发模式运行**
    ```bash
    npm run dev
    ```
 
-5. **构建应用**
+6. **构建应用**
    ```bash
    # 只构建 Linux 版本
    npm run build:linux
