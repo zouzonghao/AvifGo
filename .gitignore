@@ -4,3 +4,4 @@ dist
 *.log
 dist
 builder-dist
+package-lock.json

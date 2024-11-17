@@ -2,7 +2,17 @@ import { ipcMain, clipboard } from 'electron'
 import { processMedia } from './ffmpeg'
 import { uploadToGitHub } from './github'
 import Store from 'electron-store'
+const fs = require('fs');
 
+function logToFile(message: string) {
+    const date = new Date();
+    const logMessage = `[${date.toISOString()}] ${message}\n`;
+    fs.appendFile('/Users/macm4/code/AvifGO/app.log', logMessage, (err: any) => {
+        if (err) {
+            console.error('无法写入日志文件:', err);
+        }
+    });
+}
 const store = new Store()
 
 export const setupIPC = () => {
@@ -22,10 +32,10 @@ export const setupIPC = () => {
 
   ipcMain.handle('process-and-upload', async (_, { filePath }) => {
     try {
-      console.log('Input file path:', filePath)
+      logToFile('Input file path:' + filePath)
       const settings = store.get('settings') as any
       const processedFile = await processMedia(filePath)
-      console.log('Processed file path:', processedFile)
+      logToFile('Processed file path:'+ processedFile)
       
       const uploadedFileName = await uploadToGitHub(
         processedFile,

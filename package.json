@@ -19,10 +19,11 @@
             "output": "builder-dist"
         },
         "asar": false,
-        "npmRebuild": false,
+        "npmRebuild": true,
         "files": [
             "dist/**/*",
-            "node_modules/ffmpeg-static/**/*"
+            "node_modules/@ffmpeg-installer/**/*"
+            
         ],
         "win": {
             "target": [
@@ -31,9 +32,6 @@
                     "arch": [
                         "x64"
                     ]
-                },
-                {
-                    "target": "portable"
                 }
             ],
             "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
@@ -61,15 +59,15 @@
         }
     },
     "dependencies": {
+        "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@octokit/rest": "^19.0.7",
         "date-fns": "^4.1.0",
         "electron-store": "^8.1.0",
-        "ffmpeg-static": "^5.2.0",
         "vue": "^3.3.4"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^4.2.3",
         "@types/node": "^20.4.2",
+        "@vitejs/plugin-vue": "^4.2.3",
         "electron": "^25.2.0",
         "electron-builder": "^25.1.8",
         "electron-vite": "^1.0.27",
