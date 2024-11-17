@@ -6,7 +6,7 @@
           <label>GitHub 仓库名</label>
           <input
             v-model="settings.repo"
-            placeholder="用户/仓库名"
+            placeholder="user/repo"
             required
           >
         </div>
@@ -30,7 +30,7 @@
           <label>自定义域名</label>
           <input
             v-model="settings.domain"
-            placeholder="https://i.730307.xyz"
+            placeholder="https://img.666666.xyz"
             required
           >
         </div>
@@ -48,10 +48,10 @@ import type { Settings } from '../types/config'
 import { toRaw } from 'vue'
 
 const settings = ref<Settings>({
-  repo: 'user/repo',
-  branch: 'main',
-  token: 'token',
-  domain: 'https://img.666666.xyz'
+  repo: '',
+  branch: '',
+  token: '',
+  domain: ''
 })
 
 onMounted(async () => {
