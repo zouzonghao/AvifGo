@@ -33,8 +33,8 @@
 
 2. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/electron-image-uploader.git
-   cd electron-image-uploader
+   git clone https://github.com/zouzonghao/AvifGo.git
+   cd AvifGo
    ```
 
 3. **安装依赖**
@@ -81,8 +81,8 @@
 
 2. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/electron-image-uploader.git
-   cd electron-image-uploader
+   git clone https://github.com/zouzonghao/AvifGo.git
+   cd AvifGo
    ```
 
 3. **安装依赖**
@@ -132,8 +132,8 @@
 
 2. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/electron-image-uploader.git
-   cd electron-image-uploader
+   git clone https://github.com/zouzonghao/AvifGo.git
+   cd AvifGo
    ```
 
 3. **安装依赖**
