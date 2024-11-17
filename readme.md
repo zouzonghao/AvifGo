@@ -42,6 +42,7 @@
    npm install
    ```
 4. **替换ffmpeg**
+
    第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
 
    所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
@@ -89,6 +90,7 @@
    npm install
    ```
 4. **替换ffmpeg**
+
    第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
 
    所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
@@ -140,6 +142,7 @@
    ```
 
 4. **替换ffmpeg**
+
    第三方模块为了控制大小，ffmpeg 都是不带 libsvtav1 编码器的。
 
    所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
