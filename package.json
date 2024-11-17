@@ -1,0 +1,82 @@
+{
+    "name": "avif-go",
+    "version": "1.0.0",
+    "main": "dist/main/index.js",
+    "scripts": {
+        "dev": "electron-vite dev",
+        "build": "electron-vite build",
+        "build:win": "npm run build && electron-builder --win",
+        "build:mac": "npm run build && electron-builder --mac",
+        "build:linux": "npm run build && electron-builder --linux",
+        "build:all": "npm run build && electron-builder -mwl",
+        "postinstall": "electron-builder install-app-deps",
+        "start": "electron ."
+    },
+    "build": {
+        "productName": "avif-go",
+        "appId": "com.sanqiz.avif-go",
+        "directories": {
+            "output": "builder-dist"
+        },
+        "asar": false,
+        "npmRebuild": false,
+        "files": [
+            "dist/**/*",
+            "node_modules/ffmpeg-static/**/*"
+        ],
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                },
+                {
+                    "target": "portable"
+                }
+            ],
+            "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
+        },
+        "nsis": {
+            "oneClick": false,
+            "perMachine": true,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true
+        },
+        "mac": {
+            "target": [
+                "dmg",
+                "zip"
+            ],
+            "artifactName": "${productName}-Mac-${version}-Installer.${ext}"
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ],
+            "artifactName": "${productName}-Linux-${version}.${ext}"
+        }
+    },
+    "dependencies": {
+        "@octokit/rest": "^19.0.7",
+        "date-fns": "^4.1.0",
+        "electron-store": "^8.1.0",
+        "ffmpeg-static": "^5.2.0",
+        "vue": "^3.3.4"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "@types/node": "^20.4.2",
+        "electron": "^25.2.0",
+        "electron-builder": "^25.1.8",
+        "electron-vite": "^1.0.27",
+        "typescript": "^5.1.6",
+        "vite": "^4.4.7"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
