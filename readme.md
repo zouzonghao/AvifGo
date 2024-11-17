@@ -49,7 +49,7 @@
    
    [下载-ffmpeg-git-full.7z](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
    
-   解压后复制 bin/ffmpeg.exe 至 node_modules/@ffmpeg-installer/win32-x64 目录下替换。
+   解压后复制 `bin/ffmpeg.exe` 至 `node_modules/@ffmpeg-installer/win32-x64` 目录下替换。
 
 
 5. **开发模式运行**
@@ -97,7 +97,7 @@
 
    [下载-ffmpeg71arm.zip](https://www.osxexperts.net/ffmpeg71arm.zip)
    
-   解压后复制 ffmpeg 至 node_modules/@ffmpeg-installer/darwin-arm64 目录下替换。
+   解压后复制 `ffmpeg` 至 `node_modules/@ffmpeg-installer/darwin-arm64` 目录下替换。
 
 5. **开发模式运行**
    ```bash
@@ -147,7 +147,7 @@
 
    所以需要下载全功能的 ffmpeg 替换模块中的残血 ffmpeg。
    
-   解压后复制 ffmpeg 至 node_modules/@ffmpeg-installer/xxxxx 目录下替换。
+   解压后复制 `ffmpeg` 至 `node_modules/@ffmpeg-installer/xxxxx` 目录下替换。
 
 5. **开发模式运行**
    ```bash
