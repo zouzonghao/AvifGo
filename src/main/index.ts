@@ -6,8 +6,8 @@ let mainWindow: BrowserWindow | null = null
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 260,
-    height: 440,
+    width: 300,
+    height: 500,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true, // 启用上下文隔离
