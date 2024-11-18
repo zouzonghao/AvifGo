@@ -2,8 +2,9 @@
 # AvifGo
 
 一个基于 Electron + Vue3 + ffmpeg 的图片上传工具，可以将图片转换为 AVIF 格式并自动上传至 GitHub，支持拖拽上传和剪贴板粘贴。
-![](demo.avif
-)
+
+![](demo.avif)
+
 ## ✨ 功能特点
 
 - 🖼️ 支持图片转换为 AVIF 格式
